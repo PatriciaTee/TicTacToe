@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+:root{
+    --color-primary: #f2e3bc;
+    --color-secondary: #618985; 
+    --color-gray: #2d2d2d;
+    --box-shadow: inset 0px 0px 50px 50px rgba(0, 0, 0 ,0.1)
+}
+
+body{
+    background-color: var(--color-secondary);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Protest Riot', sans-serif;
+    color: var(--color-gray);
+    font-size: 6rem;
+}
+
+.tic-tac-toe{
+    width: 55rem;
+    height: 55rem;
+    background-color: var(--color-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.row{
+    flex-basis: 33.33%;
+    display: flex;
+    gap: 2rem;
+}
+
+.cell{
+    flex-basis: 33.33%;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell:hover{
+    box-shadow: var(--box-shadow);
+    user-select: none;
+}
+
+.bouton{
+    font-size: 24px;
+    margin: 20px;
+}
